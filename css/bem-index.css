@@ -6,6 +6,19 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
 /* HELPERS */
 
 .g-hidden {
@@ -25,79 +38,87 @@
 
 /* PAGE */
 
-.b-page {
+.page {
     width: 100%;
     font-family: Arial, sans-serif;
     background: #f8f8f8;
     font-size: 11px;
 }
 
-.b-page_header {
-    padding-top: 30px;
+.page__header {
+    padding-top: 20px;
 }
 
-.b-link {
+.link {
     text-decoration: none;
     color: inherit;
 }
 
 /* HEADER */
 
-.g-row--header {
+.header_row {
     border-bottom: 1px solid #c6c7ca;
 }
 
-.b-header_container {
+.header__container {
     max-width: 990px;
     position: relative;
     margin: 0 auto;
 }
 
-.b-header_logo {
+.header__logo {
     color: #222222;
     font-weight: 700;
+    float: left;
+    width: 50%;
+    position: relative;
 }
 
-.g-text-color--sec {
-    color: #81d8d0;
-}
-
-.g-text-color--ter {
-    color: #ff7272;
+.header__info {
+    float: right;
+    text-align: right;
+    width: 50%;
+    margin-bottom: 15px;
 }
 
 /* LOGO */
 
-.b-logo {
+.logo {
     width: 100%;
 }
 
-.b-logo--header {
+.logo_header {
     font-size: 51px;
     position: absolute;
-    top: -10px;
+    top: -15px;
 }
 
-.b-logo_title {
+.logo__complex {
     position: relative;
     font-size: inherit;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 800;
 }
 
-.b-logo_title:first-letter {
+.logo-name {
+    display: inline-block;
+}
+
+.logo-name__first-letter {
     color: #adabab;
 }
 
-.b-logo_title-block {
+.logo-block {
     color: #f8f8f8;
     font-weight: 700;
     border-radius: 2px;
     line-height: 1;
 }
 
-.b-logo_title-block--header {
+.logo-block_header {
     position: absolute;
-    top: 0;
+    top: -55px;
+    right: -250px;
     background-color: #81d8d0;
     font-size: 15px;
     padding: 5px;
@@ -105,68 +126,206 @@
 
 /* INFO FOR USER */
 
-.g-row--header-info {
-    margin-bottom: 20px;
+.header-info__settings {
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.b-user-settings_setting-name {
+.header-info__row_mgb {
+    margin-bottom: 15px;
+}
+
+.user-settings__setting-name {
     display: inline;
 }
 
-.b-user-settings_options {
+.user-settings__options {
     display: inline-block;
+    line-height: 0;
 }
 
-.b-user-options_option {
-    border: none;
-    border-radius: 3px;
+.user-options__option {
+    display: inline-block;
     margin-left: 8px;
+
+}
+
+.button {
+    border-radius: 3px;
     line-height: 0.8;
     background-image: linear-gradient(180deg, white 0%, #c7c7c7 100%);
     box-shadow: 0 1px 0 #c2b9b9;
     padding: 4px 5px;
 }
 
-.b-user-options_option--active {
+.button_active {
     background-image: linear-gradient(to top, #070707 0%, #252525 100%);
     color: #ffffff;
+}
+
+.user-actions-text_primary {
+    color: #81d8d0;
+}
+
+.user-actions-text_secondary {
+    color: #ff7272;
 }
 
 /* SHOPPING CART */
 
-.b-header_shopping-cart {
-    position: absolute;
-    top: 0;
-    right: 0;
+.header-info__shopping-cart {
+    display: inline-block;
 }
 
-.shopping-cart-box_info {
+.shopping-cart-box__info {
     background-image: linear-gradient(to top, #070707 0%, #252525 100%);
     border-radius: 5px;
-    padding: 10px;
+    position: relative;
+    bottom: 10px;
+    
 }
 
-.shopping-cart-box_item {
+.shopping-cart-box__item {
     color: #ffffff;
+    padding: 10px 50px 10px 10px;
+    margin-left: 50px;
+    border-left: 1px dotted #484848;
+    display: block;
+    position: relative;
 }
 
-.shopping-cart-box_bill {
+.shopping-cart-box__item:before{
+    content: '\0020';
+    background: url('../img/cart.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    display: block;
+}
+
+.shopping-cart-box__item:after{
+    content: '\0020';
+    background: url('../img/cart-btn.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 130px;
+    top: 25px;
+    display: block;
+}
+
+.shopping-cart-name {
+    text-transform: uppercase;
+}
+
+.shopping-cart-bill {
     color: #8a8989;
 }
 
+/* HEADER NAV */
+
+.header-nav_row {
+    background-image: linear-gradient(to top, #f8f8f8 0%, #dcdee1 100%);
+    padding: 10px 0;
+    border-bottom: 1px solid #c6c7ca;
+}
+
+.search-input {
+    float: left;
+    width: 290px;
+    border-radius: 3px;
+    border: 1px solid #c6c7ca;
+    margin-right: 5px;
+    padding: 3px 0;
+}
+
+.button-search {
+    float: left;
+    background-image: linear-gradient(to top, #070707 0%, #252525 100%);
+    padding: 11.5px 20px;
+    border-radius: 3px;
+    line-height: 0;
+    border: none;
+    position: relative;
+}
+
+.button-search:before {
+    content: '\0020';
+    background: url('../img/search.png') no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    display: block;
+}
+
+.header__menu {
+    float: right;
+    margin-top: 3px;
+}
+
+.main-menu__item {
+    float: left;
+    color: #a8a9aa;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.main-menu__item:last-of-type {
+    margin-right: 0;
+}
+
+.main-menu__item-link {
+    color: #a8a9aa;
+    padding-left: 25px;
+    position: relative;
+}
+
+.main-menu__item-link:before {
+    content: '\0020';
+    background-image: linear-gradient(180deg, white 0%, #c7c7c7 100%);
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+}
+
+.main-menu__item-link:after {
+    content: '\0020';
+    background: url('../img/nav-btn.png') no-repeat;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    display: block;
+    border-radius: 2px;
+}
+
+.main-menu__item-link_active {
+    color: #000000;
+}
+
+/* NAVIGATION */
+
+
 /* FOOTER */
 
-.g-row--footer {
+.g-row_footer {
     padding: 30px 20px;
     background-color: #dddddd;
 }
 
-.b-logo--footer {
+.logo_footer {
     font-size: 33px;
     color: #adabab;
 }
 
-.b-logo_title-block--footer {
+.logo__title-block_footer {
     position: absolute;
     top: 10px;
     background-color: #adabab;
