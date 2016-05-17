@@ -616,6 +616,7 @@ button {
     border: 1px solid #dfe1e4;
     border-radius: 5px;
     padding: 30px 10px 20px 25px;
+    background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
 }
 
 .day-deals__title {
