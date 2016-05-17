@@ -51,7 +51,7 @@ button {
 }
 
 .page__header {
-    padding-top: 20px;
+    padding-top: 19px;
 }
 
 .link {
@@ -83,7 +83,7 @@ button {
     float: right;
     text-align: right;
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 /* LOGO */
@@ -107,6 +107,7 @@ button {
 
 .logo-name {
     display: inline-block;
+    letter-spacing: -3px;
 }
 
 .logo-name__first-letter {
@@ -116,14 +117,14 @@ button {
 .logo-block {
     color: #f8f8f8;
     font-weight: 700;
-    border-radius: 2px;
-    line-height: 1;
+    border-radius: 4px 5px 4px;
+    line-height: 14px;
 }
 
 .logo-block_header {
     position: absolute;
-    top: -55px;
-    right: -250px;
+    top: -52px;
+    right: -230px;
     background-color: #81d8d0;
     font-size: 15px;
     padding: 5px;
@@ -232,7 +233,7 @@ button {
 
 .header-nav_row {
     background-image: linear-gradient(to top, #f8f8f8 0%, #dcdee1 100%);
-    padding: 10px 0;
+    padding: 10px 0 8px;
     border-bottom: 1px solid #c6c7ca;
 }
 
@@ -269,7 +270,7 @@ button {
 
 .header__menu {
     float: right;
-    margin-top: 3px;
+    margin-top: 4px;
 }
 
 .main-menu__item_header {
@@ -336,7 +337,7 @@ button {
 .aside__menu {
     background-image: linear-gradient(to top, #070707 0%, #252525 100%);
     border-radius: 5px;
-    padding: 11px 10px;
+    padding: 8px 10px 11px;
 }
 
 /* NAVIGATION */
@@ -344,7 +345,7 @@ button {
 .menu__item {
     color: #685f5f;
     border-bottom: 1px solid #685f5f;
-    line-height: 10px;
+    line-height: 5px;
 }
 
 .menu__item:first-of-type .menu__item-link {
@@ -362,8 +363,8 @@ button {
 .menu__item-link {
     text-transform: uppercase;
     display: block;
-    padding: 8.5px 0;
-    line-height: 9px;
+    padding: 6px 0 6px;
+    line-height: 11px;
     color: #685f5f;
     position: relative;
 }
@@ -410,8 +411,8 @@ button {
 
 .menu__item-submenu {
     display: none;
-    padding: 5px 0 14px 10px;
-    line-height: 13px;
+    padding: 7px 0 24px 10px;
+    line-height: 15px;
     border-top: 1px solid #685f5f;
 }
 
@@ -699,6 +700,21 @@ button {
     max-height: 150px;
     max-width: 150px;
     overflow: hidden;
+    position: relative;
+}
+
+.day-item__img_spot {
+    position: relative;
+}
+
+.day-item__img_spot:after {
+    content: '\0020';
+    background: url("../img/day-offer.png") no-repeat center center;
+    height: 30px;
+    width: 105px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
 }
 
 .day-item__title {
