@@ -32,9 +32,9 @@
                                             <p class="user-settings__setting-name">Currency:</p>
                                             <div class="user-settings__options">
                                                 <ul class="user-options">
-                                                    <li class="user-options__option"><button type="button" class="button">&#8364</button></li>
-                                                    <li class="user-options__option"><button type="button" class="button">&#163</button></li>
-                                                    <li class="user-options__option"><button type="button" class="button button_active">&#36</button></li>
+                                                    <li class="user-options__option"><button type="button" class="button-option">&#8364</button></li>
+                                                    <li class="user-options__option"><button type="button" class="button-option">&#163</button></li>
+                                                    <li class="user-options__option"><button type="button" class="button-option button-option_active">&#36</button></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -51,10 +51,49 @@
                             <div class="header-info__shopping-cart">
                                 <div class="shopping-cart-box">
                                     <div class="shopping-cart-box__info">
-                                        <a href="#" class="shopping-cart-box__item">
-                                            <div class="shopping-cart-box__item-name"><span class="shopping-cart-name">Shopping cart</span></div>
-                                            <div class="shopping-cart-box__item-bill"><span class="shopping-cart-bill"><span>0</span><span> item(s) - $</span><span>0.00</span></span></div>
-                                        </a>
+                                        <div href="#" class="shopping-cart-box-item">
+                                            <a href="#" class="shopping-cart-box__inner">
+                                                <div class="shopping-cart-box__item-name"><span class="shopping-cart-name">Shopping cart</span></div>
+                                                <div class="shopping-cart-box__item-bill"><span class="shopping-cart-bill"><span>0</span><span> item(s) - $</span><span>0.00</span></span></div>
+                                            </a>
+                                        </div>
+                                        <div class="shopping-cart-box-details g-hidden">
+                                            <div class="details">
+                                                <div class="details__items">
+                                                    <a href="#" class="details-item">
+                                                        <div class="details-item__img">
+                                                            <img class="details-item-img" src="img/item1.png">
+                                                        </div>
+                                                        <div class="details-item__title"><span class="text-block"><span class="text-block">Lorem <span class="text-block_transform_uppercase">ipsum dolor</span> sit conse Ctetur adipisi <span class="text-block_weight_bold">X 1</span> <span class="text-block_accent">$248.89</span></span></div>
+                                                        <button type="button" class="details-item__cancel-btn"></button>
+                                                    </a>
+                                                    <a href="#" class="details-item">
+                                                        <div class="details-item__img">
+                                                            <img class="details-item-img" src="img/item2.png">
+                                                        </div>
+                                                        <div class="details-item__title"><span class="text-block">Lorem <span class="text-block_transform_uppercase">ipsum dolor</span> sit conse Ctetur adipisi <span class="text-block_weight_bold">X 1</span> <span class="text-block_accent">$248.89</span></span></div>
+                                                        <button type="button" class="details-item__cancel-btn"></button>
+                                                    </a>
+                                                </div>
+                                                <div class="details__bill">
+                                                    <div class="details-check">
+                                                        <div class="details-check__costs">
+                                                            <p class="details-check__text details-check__text_name">Sub-Total</p>
+                                                            <p class="details-check__text details-check__text_name">Eco Tax (-2.00)</p>
+                                                            <p class="details-check__text details-check__text_name">VAT (17.5%)</p>
+                                                            <p class="details-check__text details-check__text_name">Total</p>
+                                                        </div>
+                                                        <div class="details-check__summ">
+                                                            <p class="details-check__text details-check__text_sum">$270.55</p>
+                                                            <p class="details-check__text details-check__text_sum">$2</p>
+                                                            <p class="details-check__text details-check__text_sum">$47.35</p>
+                                                            <p class="details-check__text details-check__text_sum">$319</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="item__details-btn item__details-btn_shopping-cart">Checkout</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +498,7 @@
 
             </div>
 
-            <div class="container container_main g-clearfix">
+            <div class="container container_brands g-clearfix">
 
                 <div class="container__brands g-clearfix">
                     <div class="brands">
