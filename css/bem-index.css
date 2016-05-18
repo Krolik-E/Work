@@ -119,7 +119,7 @@ button {
     display: inline-block;
     color: #f8f8f8;
     font-weight: 700;
-    border-radius: 4px 5px 4px;
+    border-radius: 3px;
     line-height: 14px;
     vertical-align: super;
 }
@@ -343,7 +343,7 @@ button {
 .header-nav_row {
     background-image: linear-gradient(to top, #f8f8f8 0%, #dcdee1 100%);
     padding: 10px 0 8px;
-    border-bottom: 1px solid #c6c7ca;
+    position: relative;
 }
 
 .search__input, .search__btn {
@@ -356,6 +356,7 @@ button {
     border: 1px solid #c6c7ca;
     margin-right: 5px;
     padding: 3px 0 4px;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.08);
 }
 
 .button-search {
@@ -379,12 +380,12 @@ button {
 
 .header__menu {
     float: right;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .main-menu__item_header {
     float: left;
-    margin-right: 20px;
+    margin-right: 19px;
     text-transform: uppercase;
 }
 
@@ -427,6 +428,17 @@ button {
     color: #000000;
 }
 
+.header-nav__shadow {
+    position: absolute;
+    content: "\0020";
+    background: url("../img/header-shadow.png");
+    z-index: 2;
+    left: 50%;
+    margin-left: -765px;
+    height: 10px;
+    width: 1530px;
+}
+
 /* MAIN CONTENT */
 
 .container_main {
@@ -446,7 +458,7 @@ button {
 .aside__menu {
     background-image: linear-gradient(to top, #070707 0%, #252525 100%);
     border-radius: 5px;
-    padding: 8px 10px 11px;
+    padding: 8px 10px 9px;
 }
 
 /* NAVIGATION */
@@ -520,7 +532,7 @@ button {
 
 .menu__item-submenu {
     display: none;
-    padding: 7px 0 24px 10px;
+    padding: 7px 0 26px 10px;
     line-height: 15px;
     border-top: 1px solid #685f5f;
 }
@@ -617,6 +629,7 @@ button {
 
 .slider-general__content {
     position: relative;
+    margin-bottom: -1px;
 }
 
 .slide-content {
@@ -656,7 +669,8 @@ button {
 .slider__navigation {
     border: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px 9px;
+    padding: 9px 9px;
+    line-height: 0;
     position: absolute;
     bottom: 5px;
     left: 3px;
@@ -692,10 +706,10 @@ button {
 .banner__btn {
     position: absolute;
     background: url("../img/banner-btn.png") no-repeat 10px center;
-    bottom: 15px;
-    right: 20px;
+    bottom: 17px;
+    right: 16px;
     text-transform: uppercase;
-    padding: 12px 80px;
+    padding: 12px 79px;
     border-radius: 15px;
 }
 
@@ -1103,7 +1117,7 @@ button {
 .logo_footer {
     font-size: 33px;
     color: #adabab;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .logo-block_footer {
