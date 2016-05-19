@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jewelery</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bem-index.css">
+</head>
+<body>
+    <div class="page g-clearfix">
+        <header class="page__header">
+
+            <div class="header-main header_row g-clearfix">
+                <div class="container g-clearfix">
+
+                    <div class="header__logo">
+                        <div class="logo logo_header">
+                            <a href="#" class="logo__complex">
+                                <div class="logo-name"><span class="logo-name__word"><span class="logo-name__first-letter">J</span>ewelry</span></div>
+                                <div class="logo-block logo-block_header"><span class="logo-block__store">STORE</span></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header__info">
+                        <div class="header-info g-clearfix">
+                            <div class="header-info__settings">
+                                <div class="row">
+                                    <div class="header-info__row header-info__row_mgb">
+                                        <div class="user-settings">
+                                            <p class="user-settings__setting-name">Currency:</p>
+                                            <div class="user-settings__options">
+                                                <ul class="user-options">
+                                                    <li class="user-options__option"><button type="button" class="button-option">&#8364</button></li>
+                                                    <li class="user-options__option"><button type="button" class="button-option">&#163</button></li>
+                                                    <li class="user-options__option"><button type="button" class="button-option button-option_active">&#36</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="header-info__row">
+                                        <div class="user-actions">
+                                            <div class="user-actions__text"><span class="user-actions-text">Welcome visitor you can </span><a href="#" class="user-actions-text_primary">login</a><span> or </span><a href="#" class="user-actions-text_secondary">create an account</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-info__shopping-cart">
+                                <div class="shopping-cart-box">
+                                    <div class="shopping-cart-box__info">
+                                        <div href="#" class="shopping-cart-box-item">
+                                            <a href="#" class="shopping-cart-box__inner">
+                                                <div class="shopping-cart-box__item-name"><span class="shopping-cart-name">Shopping cart</span></div>
+                                                <div class="shopping-cart-box__item-bill"><span class="shopping-cart-bill"><span>0</span><span> item(s) - $</span><span>0.00</span></span></div>
+                                            </a>
+                                        </div>
+                                        <div class="shopping-cart-box-details g-hidden">
+                                            <div class="details">
+                                                <div class="details__items">
+                                                    <a href="#" class="details-item">
+                                                        <div class="details-item__img">
+                                                            <img class="details-item-img" src="img/item1.png">
+                                                        </div>
+                                                        <div class="details-item__title"><span class="text-block"><span class="text-block">Lorem <span class="text-block_transform_uppercase">ipsum dolor</span> sit conse Ctetur adipisi <span class="text-block_weight_bold">X 1</span> <span class="text-block_accent">$248.89</span></span></div>
+                                                        <button type="button" class="details-item__cancel-btn"></button>
+                                                    </a>
+                                                    <a href="#" class="details-item">
+                                                        <div class="details-item__img">
+                                                            <img class="details-item-img" src="img/item2.png">
+                                                        </div>
+                                                        <div class="details-item__title"><span class="text-block">Lorem <span class="text-block_transform_uppercase">ipsum dolor</span> sit conse Ctetur adipisi <span class="text-block_weight_bold">X 1</span> <span class="text-block_accent">$248.89</span></span></div>
+                                                        <button type="button" class="details-item__cancel-btn"></button>
+                                                    </a>
+                                                </div>
+                                                <div class="details__bill">
+                                                    <div class="details-check">
+                                                        <div class="details-check__costs">
+                                                            <p class="details-check__text details-check__text_name">Sub-Total</p>
+                                                            <p class="details-check__text details-check__text_name">Eco Tax (-2.00)</p>
+                                                            <p class="details-check__text details-check__text_name">VAT (17.5%)</p>
+                                                            <p class="details-check__text details-check__text_name">Total</p>
+                                                        </div>
+                                                        <div class="details-check__summ">
+                                                            <p class="details-check__text details-check__text_sum">$270.55</p>
+                                                            <p class="details-check__text details-check__text_sum">$2</p>
+                                                            <p class="details-check__text details-check__text_sum">$47.35</p>
+                                                            <p class="details-check__text details-check__text_sum">$319</p>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="item__details-btn item__details-btn_shopping-cart">Checkout</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header-nav g-clearfix">
+                <div class="header-nav_row">
+                    <div class="container g-clearfix">
+
+                        <div class="header__search">
+                            <div class="search">
+                                <div class="search__input">
+                                    <input type="text" class="search-input">
+                                </div>
+                                <div class="search__btn">
+                                    <button type="button" class="button-search"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__menu">
+                            <ul class="main-menu main-menu_header">
+                                <li class="main-menu__item main-menu__item_header">
+                                    <a href="#" class="main-menu__item-link main-menu__item-link_active">home</a>
+                                </li>
+                                <li class="main-menu__item main-menu__item_header">
+                                    <a href="#" class="main-menu__item-link main-menu__item-link_header">wish list (<span>0</span>)</a>
+                                </li>
+                                <li class="main-menu__item main-menu__item_header">
+                                    <a href="#" class="main-menu__item-link main-menu__item-link_header">my account</a>
+                                </li>
+                                <li class="main-menu__item main-menu__item_header">
+                                    <a href="#" class="main-menu__item-link main-menu__item-link_header">shopping cart</a>
+                                </li>
+                                <li class="main-menu__item main-menu__item_header">
+                                    <a href="#" class="main-menu__item-link main-menu__item-link_header">checkout</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="header-nav__shadow">
+                </div>
+            </div>
+
+        </header>
+
+        <div class="page__content">
+
+            <div class="container container_main g-clearfix">
+
+                <aside class="container__aside g-clearfix">
+                    <div class="aside">
+
+                        <nav class="aside__menu g-content-row">
+
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a class="menu__item-link menu__item-link_active" href="#">
+                                        engagement
+                                    </a>
+
+                                    <div class="menu__item-submenu menu__item-submenu_active">
+                                        <ul class="submenu">
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link submenu__item-link_active">
+                                                    <span class="submenu__item-text">Lorem ipsum </span><span class="submenu__item-text submenu__item-text_active">(15)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Dolor sit amet </span><span class="submenu__item-text">(21)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Adipisicing </span><span class="submenu__item-text">(2)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Do euismod </span><span class="submenu__item-text">(14)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Tempor incididunt (</span><span class="submenu__item-text">(7)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Ut labore et </span><span class="submenu__item-text">(03)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Dolore magna </span><span class="submenu__item-text">(27)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                            <li class="submenu__item">
+                                                <a href="#" class="submenu__item-link">
+                                                    <span class="submenu__item-text">Aliqua </span><span class="submenu__item-text">(6)</span><span class="submenu__item-text"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        JEWELRY
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        DIAMONDS
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        WATCHES
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        MEN'S
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        ACCESSORIES
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        GIFTS
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        TABLE
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        LEATHER GOODS
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">
+                                        SUNGLASSES
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                        <div class="aside__social">
+
+                            <div class="social">
+                                <div class="social__link">
+                                    <a href="#" class="social-link social-link_fb">
+                                        Facebook
+                                    </a>
+                                </div>
+                                <div class="social__link">
+                                    <a href="#" class="social-link social-link_is">
+                                        About Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <main class="container__main-content g-clearfix">
+                    <div class="main-content">
+
+                        <div class="main-content__slider-general g-content-row g-clearfix">
+
+                            <div class="slider-general">
+
+                                <div class="slider-general__content">
+
+                                    <div class="slide-content">
+                                        <img class="slide-content__img" src="img/slide1.png" alt="slide1">
+
+                                        <div class="slide-content__info">
+                                            <a class="slide-content__info-box" href="#">
+                                                <span class="slide-content__info-text">
+                                                     ut labore et dolore magna
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider__navigation">
+                                        <div class="slider-nav">
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide1-mini.png" alt="slide1">
+                                            </div>
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide2-mini.png" alt="slide2">
+                                            </div>
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide3-mini.png" alt="slide3">
+                                            </div>
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide4-mini.png" alt="slide4">
+                                            </div>
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide5-mini.png" alt="slide5">
+                                            </div>
+                                            <div class="slider-nav__item">
+                                                <img class="slider-nav-img" src="img/slide6-mini.png" alt="slide6">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="main-content__banners g-content-row g-clearfix">
+                            <div class="banners g-clearfix">
+
+                                <div class="banners__item">
+                                    <div class="banner">
+                                        <div class="banner__content">
+                                            <img class="banner__img" src="img/banner1.png">
+                                            <button type="button" class="banner__btn banner__btn_primary"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="banners__item">
+                                    <div class="banner">
+                                        <div class="banner__content">
+                                            <img class="banner__img" src="img/banner2.png">
+                                            <button type="button" class="banner__btn banner__btn_secondary"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="main-content__day-deals g-content-row g-clearfix">
+
+                            <div class="day-deals g-clearfix">
+                                <div class="day-deals__title">
+                                    <span class="day-deals__title-main">Deals <span class="day-deals__title-text">of the Day</span></span>
+                                    <span class="day-deals__title-extra"><span class="day-deals__title-sale">SALE</span> extra lines just added up to <span class="day-deals__title-offer">20% off</span></span>
+                                </div>
+                                <div class="day-deals__offer g-clearfix">
+                                    <div class="day-offer">
+                                        <button type="button" class="button-general button-general_prev button-general_day-offer"></button>
+                                        <div class="day-offer__items">
+                                            <div class="day-items g-clearfix">
+                                                <div class="day-items__item">
+                                                    <div class="day-item">
+                                                        <div class="day-item__img day-item__img_spot">
+                                                            <img class="day-item-img" src="img/offer1.png">
+                                                        </div>
+                                                        <a href="#" class="day-item__title">Lorem <span class="day-item__brand">ipsum dolor</span> sit conse Ctetur adipisi</a>
+                                                        <p class="day-item__price-old">$328.96</p>
+                                                        <p class="day-item__price-new">$258.96</p>
+                                                    </div>
+                                                </div>
+                                                <div class="day-items__item">
+                                                    <div class="day-item">
+                                                        <div class="day-item__img">
+                                                            <img class="day-item-img" src="img/offer2.png">
+                                                        </div>
+                                                        <a href="#" class="day-item__title"><span class="day-item__brand">dolor</span> sit conse Ctetur adipisi <span class="day-item__brand">set</span></a>
+                                                        <p class="day-item__price-old">$328.96</p>
+                                                        <p class="day-item__price-new">$258.96</p>
+                                                    </div>
+                                                </div>
+                                                <div class="day-items__item">
+                                                    <div class="day-item">
+                                                        <div class="day-item__img">
+                                                            <img class="day-item-img" src="img/offer3.png">
+                                                        </div>
+                                                        <a href="#" class="day-item__title">Set magna <span class="day-item__brand">ipsum dolor</span> sit conse <span class="day-item__brand">Ctetur adipisi</span></a>
+                                                        <p class="day-item__price-old">$328.96</p>
+                                                        <p class="day-item__price-new">$258.96</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="button-general button-general_next button-general_day-offer"></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="main-content__special-offers g-clearfix">
+                            <div class="special-offers g-clearfix">
+                                <div class="special-offers__offer">
+                                    <a href="#" class="product-item">
+                                        <p class="item__title"><span class="item__title-brand">dolor</span> sit conse Ctetur adipisi <span class="item__title-brand">set</span></p>
+                                        <div class="item-label">
+                                            <span class="item-label__text">special <span class="item-label__text item-label__text_accent">offer</span></span>
+                                        </div>
+                                        <div class="item__img">
+                                            <img class="item-img" src="img/offer-sp1.png">
+                                        </div>
+                                        <div class="item__row g-clearfix">
+                                            <div class="item-price">
+                                                <p class="item-price__new">$258.96</p>
+                                                <p class="item-price__old">$328.96</p>
+                                            </div>
+                                            <button type="button" class="item__details-btn">Details</button>
+                                        </div>
+                                        <p class="item__description">Sed do eiusmod tempor incididuntlabore et dolore magna aliqua</p>
+                                        <div class="item__brand-img">
+                                            <img class="item-brand-img" src="img/brand1.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="special-offers__offer">
+                                    <a href="#" class="product-item">
+                                        <p class="item__title">Set magna <span class="item__title-brand">ipsum dolor</span> sit conse <span class="item__title-brand">Ctetur adipisi</span></p>
+                                        <div class="item-label">
+                                            <span class="item-label__text">special <span class="item-label__text item-label__text_accent">offer</span></span>
+                                        </div>
+                                        <div class="item__img">
+                                            <img class="item-img" src="img/offer-sp2.png">
+                                        </div>
+                                        <div class="item__row g-clearfix">
+                                            <div class="item-price">
+                                                <p class="item-price__new">$258.96</p>
+                                                <p class="item-price__old">$328.96</p>
+                                            </div>
+                                            <button type="button" class="item__details-btn">Details</button>
+                                        </div>
+                                        <p class="item__description">Sed do eiusmod tempor incididuntlabore et dolore magna aliqua</p>
+                                        <div class="item__brand-img">
+                                            <img class="item-brand-img" src="img/brand1.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="special-offers__offer">
+                                    <a href="#" class="product-item">
+                                        <p class="item__title"><span class="item__title-brand">dolor</span> sit conse Ctetur adipisi</p>
+                                        <div class="item-label">
+                                            <span class="item-label__text">special <span class="item-label__text item-label__text_accent">offer</span></span>
+                                        </div>
+                                        <div class="item__img">
+                                            <img class="item-img" src="img/offer-sp3.png">
+                                        </div>
+                                        <div class="item__row g-clearfix">
+                                            <div class="item-price">
+                                                <p class="item-price__new">$258.96</p>
+                                                <p class="item-price__old">$328.96</p>
+                                            </div>
+                                            <button type="button" class="item__details-btn">Details</button>
+                                        </div>
+                                        <p class="item__description">Sed do eiusmod tempor incididuntlabore et dolore magna aliqua</p>
+                                        <div class="item__brand-img">
+                                            <img class="item-brand-img" src="img/brand1.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="special-offers__offer">
+                                    <a href="#" class="product-item">
+                                        <p class="item__title">Lorem <span class="item__title-brand">ipsum dolor</span> sit conse Ctetur adipisi</p>
+                                        <div class="item-label">
+                                            <span class="item-label__text">special <span class="item-label__text item-label__text_accent">offer</span></span>
+                                        </div>
+                                        <div class="item__img">
+                                            <img class="item-img" src="img/offer-sp4.png">
+                                        </div>
+                                        <div class="item__row g-clearfix">
+                                            <div class="item-price">
+                                                <p class="item-price__new">$258.96</p>
+                                                <p class="item-price__old">$328.96</p>
+                                            </div>
+                                            <button type="button" class="item__details-btn">Details</button>
+                                        </div>
+                                        <p class="item__description">Sed do eiusmod tempor incididuntlabore et dolore magna aliqua</p>
+                                        <div class="item__brand-img">
+                                            <img class="item-brand-img" src="img/brand1.png">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </main>
+
+                <div class="container__beauty"></div>
+
+            </div>
+
+            <div class="container container_brands g-clearfix">
+
+                <div class="container__brands g-clearfix">
+                    <div class="brands">
+                        <button type="button" class="button-general button-general_prev button-general_brands"></button>
+                        <div class="slider-brands">
+                            <a href="#" class="slider-brands__brand">
+                                <img class="brand-img" src="img/brand1.png">
+                            </a>
+                            <a href="#" class="slider-brands__brand">
+                                <img class="brand-img" src="img/brand2.png">
+                            </a>
+                            <a href="#" class="slider-brands__brand">
+                                <img class="brand-img" src="img/brand3.png">
+                            </a>
+                            <a href="#" class="slider-brands__brand">
+                                <img class="brand-img" src="img/brand4.png">
+                            </a>
+                            <a href="#" class="slider-brands__brand">
+                                <img class="brand-img" src="img/brand5.png">
+                            </a>
+                        </div>
+                        <button type="button" class="button-general button-general_next button-general_brands"></button>
+                    </div>
+                </div>
+
+                <div class="container__beauty"></div>
+
+            </div>
+
+        </div>
+
+        <footer class="page__footer">
+            <div class="footer">
+                <div class="container container_footer g-clearfix">
+
+                    <div class="footer__navigation">
+                        <div class="footer-navigation">
+                            <div class="footer-menu">
+                                <p class="footer-menu__header">Information</p>
+                                <ul class="main-menu main-menu_footer">
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">About us</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Delivery Information</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Privacy Policy</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu">
+                                <p class="footer-menu__header">Customer service</p>
+                                <ul class="main-menu main-menu_footer">
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Contact us</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Return</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Site Map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu">
+                                <p class="footer-menu__header">Extras</p>
+                                <ul class="main-menu main-menu_footer">
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Brands</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Gift Vouchers</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Affiliates</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Specials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu">
+                                <p class="footer-menu__header">My account</p>
+                                <ul class="main-menu main-menu_footer">
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">My account</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Order history</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Wish list</a>
+                                    </li>
+                                    <li class="main-menu__item main-menu__item_footer">
+                                        <a href="#" class="main-menu__item-link">Newsletter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__company-info">
+                        <div class="footer__logo">
+                            <div class="logo logo_footer">
+                                <a href="#" class="logo__complex">
+                                    <div class="logo-name logo-name_footer"><span class="logo-name__word"><span class="logo-name__first-letter">J</span>ewelry</span></div>
+                                    <div class="logo-block logo-block_footer"><span class="logo-block__store">STORE</span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="footer__rights">Powered By OpenCart Your Store © 2012</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
