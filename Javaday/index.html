@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>JavaDay Conference</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
     <div class="page">
 
         <header class="page__header">
             <div class="header">
-                <div class="container">
+                <div class="container container_header">
                     <div class="container__logo">
                         <div class="logo">
                             <a href="#" class="logo__img">
@@ -18,11 +20,31 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container__menu">
-                        <nav class="menu">
-
-                        </nav>
-                    </div>
+                    <nav class="container__menu">
+                        <button type="button" class="menu-btn"></button>
+                        <ul class="menu">
+                            <li class="menu__item menu__item_active">
+                                <a href="#" class="menu__item-link">
+                                    News
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    Members
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    Events
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__item-link">
+                                    Trainings
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -30,20 +52,121 @@
         <main class="page__content">
             <div class="content">
                 <div class="content__slider">
-                    <div class="container">
-
+                    <div class="slider">
+                        <picture class="slider__img">
+                            <source srcset="img/banner_desktop_hd.png" media="(min-width: 1024px)">
+                            <source srcset="img/banner_tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+                            <img class="slider__slide-img" src="img/banner_mobile.png">
+                        </picture>
+                        <div class="slider__content">
+                            <button type="button" class="slider__btn slider__btn_prev"></button>
+                            <div class="slider__info">
+                                <h1 class="slider__info-title">
+                                    JAVADAY KIEV CONFERENCE
+                                </h1>
+                                <p class="slider__info-description">
+                                    JavaDay Kiev is an annual conference focused on new features of the Java language and Java-related technologies.
+                                </p>
+                                <div class="slider__info-main">
+                                    <p class="slider__info-date">
+                                        January 15th - January 17th
+                                    </p>
+                                    <button type="button" class="slider__info-btn">Join now</button>
+                                </div>
+                            </div>
+                            <button type="button" class="slider__btn slider__btn_next"></button>
+                        </div>
+                        <div class="slider__nav">
+                        </div>
                     </div>
                 </div>
+
                 <div class="content__main-info">
+                    <div class="container container_main-info">
+                        <div class="main-info__news">
+                            <section class="section section_news">
+                                <h2 class="section__header">
+                                    Competency News
+                                </h2>
+                                <div class="news__articles">
+                                    <div class="articles">
+                                        <div class="articles__item">
+                                            <article class="article">
+                                                <p class="article__date">12.01.2015</p>
+                                                <h3 class="article__title">
+                                                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                                                </h3>
+                                                <p class="article__description">
+                                                    So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individ.
+                                                </p>
+                                            </article>
+                                        </div>
+                                        <div class="articles__item">
+                                            <article class="article">
+                                                <p class="article__date">12.01.2015</p>
+                                                <h3 class="article__title">
+                                                    Synth polaroid bitters chillwave pickled
+                                                </h3>
+                                                <p class="article__description">
+                                                    Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anderson Banksy. Asymmetrical viral letterpress, McSwee.
+                                                </p>
+                                            </article>
+                                        </div>
+                                        <div class="articles__item">
+                                            <article class="article">
+                                                <p class="article__date">12.01.2015</p>
+                                                <h3 class="article__title">
+                                                    Fixie tote bag ethnic keytar
+                                                </h3>
+                                                <p class="article__description">
+                                                    Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin.
+                                                </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="main-info__conference">
+                            <div class="conference">
+                                <div class="conference__agenda">
+                                    <div class="section section_agenda">
+                                        <h2 class="section__header">
+                                            Conference Agenda
+                                        </h2>
+                                        <div class="section__list">
+                                            <ul class="agenda">
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time"></p>
+                                                    <p class="agenda__title"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conference__members">
+                                    <div class="section section_members">
+                                        <h2 class="section__header">
+                                            Members List
+                                        </h2>
+                                        <div class="section__list">
+                                            <ul class="members">
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__articles">
                     <div class="container">
 
                     </div>
                 </div>
-                <div class="content__news">
-                    <div class="container">
 
-                    </div>
-                </div>
                 <div class="content__contacts">
                     <div class="container">
 
