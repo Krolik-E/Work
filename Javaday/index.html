@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <nav class="container__menu">
-                        <button type="button" class="menu-btn"></button>
+                        <button type="button" class="menu-btn"><span class="menu-btn__bg"></span></button>
                         <ul class="menu">
                             <li class="menu__item menu__item_active">
                                 <a href="#" class="menu__item-link">
@@ -54,8 +54,8 @@
                 <div class="content__slider">
                     <div class="slider">
                         <picture class="slider__img">
-                            <source srcset="img/banner_desktop_hd.png" media="(min-width: 1024px)">
-                            <source srcset="img/banner_tablet.png" media="(min-width: 768px) and (max-width: 1024px)">
+                            <source srcset="img/banner_desktop_hd.png" media="(min-width: 1440px)">
+                            <source srcset="img/banner_tablet.png" media="(min-width: 768px) and (max-width: 1440px)">
                             <img class="slider__slide-img" src="img/banner_mobile.png">
                         </picture>
                         <div class="slider__content">
@@ -93,7 +93,7 @@
                                         <div class="articles__item">
                                             <article class="article">
                                                 <p class="article__date">12.01.2015</p>
-                                                <h3 class="article__title">
+                                                <h3 class="article__title article__title_news">
                                                     Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
                                                 </h3>
                                                 <p class="article__description">
@@ -104,7 +104,7 @@
                                         <div class="articles__item">
                                             <article class="article">
                                                 <p class="article__date">12.01.2015</p>
-                                                <h3 class="article__title">
+                                                <h3 class="article__title article__title_news">
                                                     Synth polaroid bitters chillwave pickled
                                                 </h3>
                                                 <p class="article__description">
@@ -115,7 +115,7 @@
                                         <div class="articles__item">
                                             <article class="article">
                                                 <p class="article__date">12.01.2015</p>
-                                                <h3 class="article__title">
+                                                <h3 class="article__title article__title_news">
                                                     Fixie tote bag ethnic keytar
                                                 </h3>
                                                 <p class="article__description">
@@ -137,8 +137,32 @@
                                         <div class="section__list">
                                             <ul class="agenda">
                                                 <li class="agenda__item">
-                                                    <p class="agenda__time"></p>
-                                                    <p class="agenda__title"></p>
+                                                    <p class="agenda__time">10:00 - 12:00</p>
+                                                    <p class="agenda__title">Nam porttit.</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">12:00 - 12:45</p>
+                                                    <p class="agenda__title">Cursus Condimentum Dolor</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">12:45 - 16:40</p>
+                                                    <p class="agenda__title">Amet Condimentum</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">16:40 - 17:40</p>
+                                                    <p class="agenda__title">Coffee Break</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">17:40 - 18:50</p>
+                                                    <p class="agenda__title">Lorem Ligula Etiam Condimentum</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">18:50 - 19:25</p>
+                                                    <p class="agenda__title">Consectetur Lorem</p>
+                                                </li>
+                                                <li class="agenda__item">
+                                                    <p class="agenda__time">20:00 - 23:00</p>
+                                                    <p class="agenda__title">Fun Afterparty</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -150,9 +174,43 @@
                                             Members List
                                         </h2>
                                         <div class="section__list">
-                                            <ul class="members">
-
-                                            </ul>
+                                            <ol class="members">
+                                                <li class="members__item">
+                                                    <span class="members__number">1</span>
+                                                    <p class="members__name">Cheryl James</p>
+                                                    <p class="members__info">Villeurbanne</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">2</span>
+                                                    <p class="members__name">Maria Kelly</p>
+                                                    <p class="members__info">Asnières-sur-Seine</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">3</span>
+                                                    <p class="members__name">Carolyn Elliott</p>
+                                                    <p class="members__info">Caen</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">4</span>
+                                                    <p class="members__name">Christine Estrada</p>
+                                                    <p class="members__info">Besançon</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">5</span>
+                                                    <p class="members__name">Anna Howell</p>
+                                                    <p class="members__info">La Rochelle</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">6</span>
+                                                    <p class="members__name">Christine McDonald</p>
+                                                    <p class="members__info">Saint-Étienne</p>
+                                                </li>
+                                                <li class="members__item">
+                                                    <span class="members__number">7</span>
+                                                    <p class="members__name">Sharon Wheeler</p>
+                                                    <p class="members__info">Caen</p>
+                                                </li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
@@ -162,8 +220,73 @@
                 </div>
 
                 <div class="content__articles">
-                    <div class="container">
-
+                    <div class="container container_articles">
+                        <div class="container__article">
+                            <article class="article">
+                                <h2 class="article__header">
+                                    Last Article
+                                </h2>
+                                <picture class="article__img">
+                                    <source srcset="img/photo_1.png" media="(min-width: 1440px)">
+                                    <source srcset="img/photo_tablet_1.png" media="(min-width: 768px) and (max-width: 1440px)">
+                                    <img class="article-img" src="img/photo_mobile_1.png">
+                                </picture>
+                                <h3 class="article__title">
+                                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.
+                                </h3>
+                                <p class="article__description">
+                                    Aenean lacinia bibendum nulla sed
+                                    consectetur. Aenean eu leo quam.
+                                    Pellentesque ornare sem lacinia quam
+                                    venenatis vestibulum. Donec sed odio
+                                    dui. Maecenas sed diam eget risus
+                                    varius blandit sit amet non magna.
+                                    Donec sed odio dui. Etiam porta sem
+                                    malesuada magna mollis euismod. Nullam id
+                                    dolor id nibh ultricies vehicula ut id elit.
+                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque
+                                    ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
+                                    lobortis.
+                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia
+                                    bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                                    nisl consectetur et. Curabitur blandit tempus porttitor.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="container__article">
+                            <article class="article">
+                                <h2 class="article__header">
+                                    Centre Life
+                                </h2>
+                                <picture class="article__img article__img_right">
+                                    <source srcset="img/photo_2.png" media="(min-width: 1440px)">
+                                    <source srcset="img/photo_tablet_2.png" media="(min-width: 768px) and (max-width: 1440px)">
+                                    <img class="article-img" src="img/photo_mobile_2.png">
+                                </picture>
+                                <h3 class="article__title">
+                                    Maecenas faucibus mollis interdum. Morbi leo risus.
+                                </h3>
+                                <p class="article__description">
+                                    Aenean lacinia bibendum nulla sed
+                                    consectetur. Aenean eu leo quam.
+                                    Pellentesque ornare sem lacinia quam
+                                    venenatis vestibulum. Donec sed odio
+                                    dui. Maecenas sed diam eget risus
+                                    varius blandit sit amet non magna.
+                                    Donec sed odio dui. Etiam porta sem
+                                    malesuada magna mollis euismod. Nullam id
+                                    dolor id nibh ultricies vehicula ut id elit.
+                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                                    mus. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque
+                                    ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
+                                    lobortis.
+                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia
+                                    bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque
+                                    nisl consectetur et. Curabitur blandit tempus porttitor.
+                                </p>
+                            </article>
+                        </div>
                     </div>
                 </div>
 
