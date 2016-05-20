@@ -177,6 +177,10 @@ button {
     background: url("../img/close_mobile.png") no-repeat center center;
 }
 
+.container__menu_active .menu-btn__bg {
+    background: none;
+}
+
 /* END HEADER */
 
 /* SLIDER */
@@ -596,4 +600,92 @@ button {
 
 /* END ARTICLES */
 
+/* CONTACTS */
+
+.container_contacts {
+    padding: 0 150px;
+}
+
+.container__contacts {
+    padding: 35px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .container__contacts {
+        padding: 55px 0;
+    }
+}
+
+.contact {
+    display: block;
+    padding: 40px 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact_fb {
+    background-image: url("../img/Facebook_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_fb {
+        background-image: url("../img/Facebook.png");
+    }
+}
+
+.contact_tw {
+    background-image: url("../img/Twitter_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_tw {
+        background-image: url("../img/Twitter.png");
+    }
+}
+
+.contact_ld {
+    background-image: url("../img/LinkedIN_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_ld {
+        background-image: url("../img/LinkedIN.png");
+    }
+}
+
+.contact_in {
+    background-image: url("../img/Instagram_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_in {
+        background-image: url("../img/Instagram.png");
+    }
+}
+
+.contact_go {
+    background-image: url("../img/Google_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_go {
+        background-image: url("../img/Google.png");
+    }
+}
+
+.contact_yo {
+    background-image: url("../img/Youtube_mobile.png");
+}
+
+@media screen and (min-width: 768px) {
+    .contact_yo {
+        background-image: url("../img/Youtube.png");
+    }
+}
+
+/* END CONTACTS */
 
