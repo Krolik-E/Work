@@ -258,26 +258,16 @@ button {
     .slider__info {
         top: 50%;
         justify-content: center;
-        transform: translate(-50%, -52%);
+        transform: translate(-50%, -50%);
+        padding: 25px 20px 9px 25px;
+        max-width: 530px;
     }
 }
 
 @media  screen and (min-width: 1440px) {
     .slider__info {
         transform: translate(-83%, -39%);
-    }
-}
-
-@media  screen and (min-width: 1440px) {
-    .slider__info {
-        padding: 30px 25px 25px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .slider__info {
         padding: 20px 20px 0 25px;
-        max-width: 530px;
     }
 }
 
@@ -405,7 +395,7 @@ button {
 
 @media screen and (min-width: 768px) {
     .slider__nav {
-        bottom: 32px;
+        bottom: 37px;
     }
 }
 
