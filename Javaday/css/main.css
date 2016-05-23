@@ -134,6 +134,10 @@ button {
     padding-right: 13px;
 }
 
+.container__menu_active .menu {
+    display: block;
+}
+
 @media screen and (min-width: 768px) {
     .menu {
         margin-top: -3px;
@@ -666,7 +670,7 @@ button {
 
 .members__item {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     font-size: 1.7rem;
     line-height: 125%;
     padding-left: 23px;
@@ -674,7 +678,6 @@ button {
 
 @media screen and (min-width: 768px) {
     .members__item {
-        padding-bottom: 23px;
         padding-left: 27px;
     }
 }
@@ -718,7 +721,6 @@ button {
 
 .container_articles {
     flex-direction: column;
-    padding:
 }
 
 @media screen and (min-width: 1440px) {
@@ -733,25 +735,97 @@ button {
     flex-basis: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .container__article {
+        margin-bottom: 20px;
+    }
+
+    .container__article:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
 .container__article:last-of-type {
     padding-right: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .container__article:last-of-type {
+        padding-left: 12px;
+    }
 }
 
 .article__header {
     font-size: 2.4rem;
     color: #454545;
     line-height: 134%;
-    padding: 45px 0 32px;
+    padding: 18px 0 23px;
+}
+
+@media screen and (min-width: 768px) {
+    .article__header {
+        font-size: 2.8rem;
+        padding: 27px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .article__header {
+        font-size: 2.4rem;
+        padding: 22px 0 33px;
+    }
 }
 
 .article__img {
-    float: left;
-    margin: 0 25px 50px 0;
+    margin: 0 auto 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .article__img {
+        float: left;
+        margin: 0 30px 10px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .article__img {
+        float: left;
+        margin: 0 24px 10px 0;
+    }
 }
 
 .article__img_right {
     float: right;
     margin: 0 0 50px 25px;
+}
+
+.article__title_article {
+    margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .article__title_article {
+        margin: 0 0 24px;
+        line-height: 125%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .article__title_article {
+        line-height: 120%;
+    }
+}
+
+.article__description_article {
+    font-size: 1.8rem;
+    line-height: 125%;
+}
+
+@media screen and (min-width: 1440px) {
+    .article__description_article {
+        font-size: 1.6rem;
+        line-height: 100%;
+    }
 }
 
 /* END ARTICLES */
