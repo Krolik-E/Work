@@ -224,12 +224,11 @@ button {
     align-items: stretch;
     justify-content: space-between;
     max-width: 1024px;
-    height: 150px;
     width: 100%;
     left: 50%;
     top: 50%;
-    height: 100px;
-    transform: translate(-50%, -67%);
+    height: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1440px) {
@@ -281,7 +280,7 @@ button {
         padding: 0 30px;
         display: block;
         background-repeat: no-repeat;
-        background-position: 21px 43px;
+        background-position: 21px 105px;
         background-color: transparent;
     }
 
