@@ -21,6 +21,18 @@ html {
     padding: 0;
 }
 
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -50,7 +62,6 @@ button {
 @media screen and (min-width: 768px) {
     .container {
         min-width: 708px;
-        max-width: 1024px;
         width: 92.2%;
     }
 }
@@ -278,7 +289,7 @@ button {
         padding: 0 30px;
         display: block;
         background-repeat: no-repeat;
-        background-position: 21px 105px;
+        background-position: 21px 50%;
         background-color: transparent;
     }
 
