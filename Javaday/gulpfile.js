@@ -5,12 +5,14 @@ var prefix = require('gulp-autoprefixer');
 var minify = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var atImport = require('postcss-import');
+var variables = require('postcss-simple-vars');
 var bem = require('postcss-bem');
 var nested = require('postcss-nested');
 
 gulp.task('css-bem', function () {
     var processors = [
         atImport(),
+        variables({ silent: true }),
         bem({separators: {
         descendent: '__',
             modifier: '_'

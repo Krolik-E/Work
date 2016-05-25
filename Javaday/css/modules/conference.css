@@ -55,7 +55,7 @@
     &:before {
          content: '\2022';
          font-size: 3rem;
-         color: #C62A31;
+         color: $main-color;
          position: absolute;
          left: -26px;
          top: -13px;
@@ -71,7 +71,7 @@
 
     @descendent title {
         font-size: 1.6rem;
-        color: #778081;
+        color: $text-color-sec;
     }
 }
 
@@ -100,17 +100,17 @@
          top: -4px;
          left: -12px;
          padding: 14px;
-         border: 1px solid #C62A31;
+         border: 1px solid $main-color;
          border-radius: 50%;
      }
     }
 
     @descendent name {
-        color: #C62A31;
+        color: $main-color;
     }
 
     @descendent info {
-        color: #778081;
+        color: $text-color-sec;
     }
 }
 

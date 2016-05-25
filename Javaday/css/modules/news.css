@@ -98,7 +98,7 @@
     @descendent title {
         font-size: 2rem;
         line-height: 125%;
-        color: #C62A31;
+        color: $main-color;
         margin-bottom: 10px;
 
         @modifier article {
@@ -109,7 +109,7 @@
 
     @descendent description {
         font-size: 1.6rem;
-        color: #778081;
+        color: $text-color-sec;
         line-height: 140%;
 
         @modifier article {
@@ -126,7 +126,7 @@
 
     @descendent header {
         font-size: 2.4rem;
-        color: #454545;
+        color: $text-color;
         line-height: 134%;
         padding: 18px 0 23px;
     }

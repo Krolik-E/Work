@@ -4,7 +4,7 @@
     }
 
     @descendent footer {
-        background-color: #c62a31;
+        background-color: $main-color;
     }
 }
 
@@ -20,7 +20,7 @@
     }
 
     @descendent item {
-        color: #ffffff;
+        color: $header-color;
         padding: 8px 0 9px;
         display: block;
 
@@ -40,7 +40,7 @@
         font-size: 2rem;
 
         @descendent item {
-            color: #778081;
+            color: $text-color-sec;
             line-height: 130%;
             padding: 0;
             margin-right: 25px;
@@ -50,8 +50,8 @@
             }
 
             @modifier active {
-                border-bottom: 2px solid #c62a31;
-                color: #454545;
+                border-bottom: 2px solid $main-color;
+                color: $text-color;
             }
         }
     }

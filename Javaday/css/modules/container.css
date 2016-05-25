@@ -78,7 +78,7 @@
     @descendent rights {
         flex-grow: 1;
         flex-basis: 0;
-        color: #ffffff;
+        color: $header-color;
         font-size: 1.3rem;
         line-height: 115%;
         text-align: center;
@@ -90,7 +90,7 @@
         flex-basis: 0;
         flex-grow: 1;
         text-align: center;
-        color: #ffffff;
+        color: $header-color;
         font-size: 1.3rem;
         line-height: 115%;
         margin-bottom: 11px;
@@ -100,7 +100,7 @@
         flex-basis: 0;
         flex-grow: 1;
         text-align: center;
-        color: #ffffff;
+        color: $header-color;
         font-size: 1.3rem;
         line-height: 115%;
     }
