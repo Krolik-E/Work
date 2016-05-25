@@ -1,0 +1,27 @@
+{
+  "name": "javaday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "author": "Eugenia Krolitska",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "postcss-bem": "^0.4.1",
+    "postcss-import": "^8.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^2.0.0"
+  }
+}

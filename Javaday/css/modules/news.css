@@ -1,0 +1,230 @@
+/* MAIN INFO */
+
+@component  section{
+    @modifier news {
+        padding-right: 15px;
+    }
+
+    @descendent header {
+        font-size: 2.4rem;
+        color: #454545;
+        line-height: 134%;
+        margin-bottom: 21px;
+    }
+
+    @descendent list {
+        padding-left: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component  section{
+        @descendent header {
+            font-size: 2.8rem;
+            margin-bottom: 26px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    @component  section{
+        @descendent header {
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+        }
+
+        @modifier agenda{
+            padding-left: 12px;
+        }
+
+        @descendent list {
+            padding-left: 21px;
+        }
+    }
+}
+
+/* NEWS */
+
+@component news {
+    @descendent articles {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component news {
+        @descendent articles {
+            margin-top: 30px;
+        }
+    }
+}
+
+@component articles {
+    @descendent item {
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component articles {
+        @descendent item {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    @component articles {
+        @descendent item {
+            margin-bottom: 26px;
+        }
+    }
+}
+
+/* ARTICLE */
+
+@component article {
+    @descendent date {
+        font-size: 1.2rem;
+        line-height: 125%;
+        color: #000000;
+        padding-bottom: 7px;
+    }
+
+    @descendent title {
+        font-size: 2rem;
+        line-height: 125%;
+        color: #C62A31;
+        margin-bottom: 10px;
+
+        @modifier article {
+            margin: 0 0 24px;
+            line-height: 125%;
+        }
+    }
+
+    @descendent description {
+        font-size: 1.6rem;
+        color: #778081;
+        line-height: 140%;
+
+        @modifier article {
+            font-size: 1.8rem;
+            line-height: 125%;
+            display: block;
+            margin-bottom: 15px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @descendent header {
+        font-size: 2.4rem;
+        color: #454545;
+        line-height: 134%;
+        padding: 18px 0 23px;
+    }
+
+    @descendent img {
+        margin: 0 auto 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component article {
+        @descendent date {
+            padding-bottom: 9px;
+        }
+
+        @descendent title {
+            font-size: 2.5rem;
+            line-height: 130%;
+            margin-bottom: 11px;
+
+            @modifier news {
+                padding-right: 180px;
+            }
+
+            @modifier article {
+                margin: 0 0 24px;
+                line-height: 125%;
+            }
+        }
+
+        @descendent header {
+            font-size: 2.8rem;
+            padding: 27px 0;
+        }
+
+        @descendent img {
+            float: left;
+            margin: 0 30px 10px 0;
+
+            @modifier right {
+                float: right;
+                margin: 0 0 10px 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    @component article {
+        @descendent date {
+            padding-bottom: 9px;
+        }
+
+        @descendent title {
+            font-size: 1.6rem;
+            padding-right: 20px;
+            margin-bottom: 7px;
+
+            @modifier news {
+                min-height: 2.3rem;
+                max-height: 4rem;
+                overflow: hidden;
+            }
+
+            @modifier article {
+                line-height: 120%;
+            }
+        }
+
+        @descendent description {
+            font-size: 1.4rem;
+            line-height: 125%;
+            padding-right: 20px;
+
+            @modifier article {
+                font-size: 1.4rem;
+                line-height: 100%;
+            }
+        }
+
+        @descendent header {
+            font-size: 2.4rem;
+            padding: 22px 0 33px;
+        }
+
+        @descendent img {
+            margin: 0 24px 10px 0;
+
+            @modifier right {
+                margin: 0 0 10px 24px;
+            }
+        }
+    }
+}
+
+/* ARTICLE */
+
+/* END NEWS */
+
+
+

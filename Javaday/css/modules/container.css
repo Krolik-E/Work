@@ -1,0 +1,215 @@
+/* CONTAINER */
+
+@component container {
+    display: flex;
+    min-width: 280px;
+    width: 87.5%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @modifier header {
+        flex-basis: 0;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    @descendent logo {
+        padding: 14px 0 11px;
+    }
+
+    @descendent menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 24px 0 0;
+
+        @modifier active {
+            background-color: rgba(198, 42, 49, 0.9);
+            height: 100vh;
+            position: fixed;
+            z-index: 2;
+            padding-right: 13px;
+        }
+    }
+
+    @modifier main-info{
+        padding-top: 23px;
+        flex-direction: column;
+    }
+
+    @descendent news {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    @descendent conference {
+        flex-basis: 0;
+        flex-grow: 2;
+    }
+
+    @modifier articles{
+        flex-direction: column;
+    }
+
+    @descendent articles {
+        padding-right: 20px;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+
+    @descendent contacts {
+        padding: 48px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @modifier footer {
+        flex-direction: column;
+        padding: 25px 0;
+        justify-content: center;
+    }
+
+    @descendent rights {
+        flex-grow: 1;
+        flex-basis: 0;
+        color: #ffffff;
+        font-size: 1.3rem;
+        line-height: 115%;
+        text-align: center;
+        margin-bottom: 11px;
+        letter-spacing: -0.1px;
+    }
+
+    @descendent nav {
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.3rem;
+        line-height: 115%;
+        margin-bottom: 11px;
+    }
+
+    @descendent web-dev {
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1.3rem;
+        line-height: 115%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component container {
+        min-width: 708px;
+        width: 92.2%;
+
+        @descendent logo {
+            flex-grow: 1;
+        }
+
+        @descendent menu {
+            flex-grow: 1;
+            position: static;
+            padding: 0;
+            align-self: center;
+            height: auto;
+
+            @modifier active {
+                background: none;
+                height: auto;
+                position: static;
+                z-index: 1;
+            }
+        }
+
+        @modifier main-info{
+            padding-top: 45px;
+        }
+
+        @descendent conference {
+            margin-top: 50px;
+        }
+
+        @descendent articles {
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        @descendent contacts {
+            padding: 70px 82px;
+        }
+
+        @modifier footer {
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 43px 0;
+            align-items: center;
+        }
+
+        @descendent rights {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        @descendent nav {
+            margin-bottom: 0;
+            text-align: end;
+        }
+
+        @descendent web-dev {
+            text-align: end;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    @component container {
+        max-width: 1024px;
+
+        @descendent logo {
+            flex-grow: 2;
+        }
+
+        @modifier main-info{
+            flex-direction: row;
+        }
+
+        @descendent conference {
+            margin-top: 0;
+        }
+
+        @modifier articles{
+            flex-direction: row;
+        }
+
+        @descendent articles {
+            margin-bottom: 0;
+
+            &:last-of-type {
+                padding-left: 12px;
+            }
+        }
+
+        @descendent contacts {
+            padding: 70px 164px;
+        }
+
+        @descendent nav {
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}
+
+/* END CONTAINER */

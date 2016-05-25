@@ -1,0 +1,61 @@
+
+@component contact {
+    display: block;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @modifier fb {
+        background-image: url("../img/Facebook_mobile.png");
+    }
+
+    @modifier tw {
+        background-image: url("../img/Twitter_mobile.png");
+    }
+
+    @modifier ld {
+        background-image: url("../img/LinkedIN_mobile.png");
+    }
+
+    @modifier in {
+        background-image: url("../img/Instagram_mobile.png");
+    }
+
+    @modifier go {
+        background-image: url("../img/Google_mobile.png");
+    }
+
+    @modifier yo {
+        background-image: url("../img/Youtube_mobile.png");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component contact {
+        padding: 21px;
+
+        @modifier fb {
+            background-image: url("../img/Facebook.png");
+        }
+
+        @modifier tw {
+            background-image: url("../img/Twitter.png");
+        }
+
+        @modifier ld {
+            background-image: url("../img/LinkedIN.png");
+        }
+
+        @modifier in {
+            background-image: url("../img/Instagram.png");
+        }
+
+        @modifier go {
+            background-image: url("../img/Google.png");
+        }
+
+        @modifier yo {
+            background-image: url("../img/Youtube.png");
+        }
+    }
+}

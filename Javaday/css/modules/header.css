@@ -1,0 +1,84 @@
+@component page {
+    @descendent content {
+        background: url("../img/textura.png");
+    }
+
+    @descendent footer {
+        background-color: #c62a31;
+    }
+}
+
+@component menu {
+    display: none;
+    margin-top: 32px;
+    text-align: right;
+    font-size: 2.5rem;
+    padding-right: 13px;
+
+    .container__menu_active & {
+        display: block;
+    }
+
+    @descendent item {
+        color: #ffffff;
+        padding: 8px 0 9px;
+        display: block;
+
+        @modifier active {
+            color: #ffa4a4;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component menu {
+        margin-top: -3px;
+        display: flex;
+        justify-content: flex-end;
+        position: static;
+        padding-right: 0;
+        font-size: 2rem;
+
+        @descendent item {
+            color: #778081;
+            line-height: 130%;
+            padding: 0;
+            margin-right: 25px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            @modifier active {
+                border-bottom: 2px solid #c62a31;
+                color: #454545;
+            }
+        }
+    }
+}
+
+@component menu-btn {
+    background: transparent;
+    padding: 10px;
+
+    .container__menu_active & {
+        background: url("../img/close_mobile.png") no-repeat center center;
+        margin-left: 95px;
+    }
+
+    @descendent bg {
+        background: linear-gradient(to bottom, rgba(198,42,50,1) 0%, rgba(198,42,50,1) 20%, rgba(198,42,50,0) 20%, rgba(198,42,50,0) 40%, rgba(198,42,50,1) 40%, rgba(198,42,50,1) 50%, rgba(198,42,50,1) 60%, rgba(198,42,50,0) 60%, rgba(198,42,49,0) 80%, rgba(198,42,49,1) 80%, rgba(198,42,49,1) 100%);
+        display: block;
+        padding: 11px 14px;
+
+        .container__menu_active & {
+            background: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @component menu-btn {
+        display: none;
+    }
+}

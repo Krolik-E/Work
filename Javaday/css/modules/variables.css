@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('fonts/PT SansRegular/PTS55F-webfont.eot');
+    src: url('fonts/PT SansRegular/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PT SansRegular/PTS55F-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
